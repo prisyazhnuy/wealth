@@ -1,0 +1,44 @@
+ext {
+    compileSdkVersion = 28
+    minSdkVersion = 21
+    buildToolsVersion = '28.0.3'
+    targetSdkVersion = 28
+
+    archVersion = "2.0.0"
+    supportVersion = "1.0.0"
+    constraintlayoutVersion = "1.1.2"
+    multiDexVersion = "2.0.0"
+
+    rxJava2Version = '2.2.8'
+    rxKotlinVersion = '2.3.0'
+    rxAndroidVersion = '2.1.1'
+
+    jacksonVersion = '2.9.8'
+
+    okHttpLoggingVersion = '3.9.0'
+
+    supportDependencies = [
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            appCompat         : "androidx.appcompat:appcompat:$supportVersion",
+            recyclerView      : "androidx.recyclerview:recyclerview:$supportVersion",
+            design            : "com.google.android.material:material:$supportVersion",
+            lifecycleExtension: "androidx.lifecycle:lifecycle-extensions:$archVersion",
+            constraintlayout  : "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion",
+            multiDex          : "androidx.multidex:multidex:$multiDexVersion",
+    ]
+
+    rxDependencies = [
+            rxJava2 : "io.reactivex.rxjava2:rxjava:$rxJava2Version",
+            rxKotlin: "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    ]
+
+    jacksonDependencies = [
+            joda       : "com.fasterxml.jackson.datatype:jackson-datatype-joda:$jacksonVersion",
+            annotations: "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion",
+            databind   : "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
+            core       : "com.fasterxml.jackson.core:jackson-core:$jacksonVersion",
+            interceptor: "com.squareup.okhttp3:logging-interceptor:$okHttpLoggingVersion"
+    ]
+
+}

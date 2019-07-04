@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wealth</string>
+    <string name="total_net_worth">Total net worth</string>
+    <string name="net_income_ytd">Net income ytd</string>
+    <string name="performance">Performance</string>
+    <string name="asset_reporting">Asset Reporting</string>
+    <string name="change">Change(£000\'s)</string>
+    <string name="category">Category</string>
+</resources>

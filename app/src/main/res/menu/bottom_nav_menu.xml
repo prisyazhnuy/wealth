@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_dashboard"
+        android:enabled="true"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/action_inbox"
+        android:enabled="true"
+        android:title="Inbox" />
+    <item
+        android:id="@+id/action_reporting"
+        android:enabled="true"
+        android:title="Reporting" />
+    <item
+        android:id="@+id/action_docs"
+        android:enabled="true"
+        android:title="e-Docs" />
+    <item
+        android:id="@+id/action_more"
+        android:enabled="true"
+        android:title="More" />
+</menu>

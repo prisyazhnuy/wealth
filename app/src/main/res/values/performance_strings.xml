@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="performance_array">
+        <item>1Q</item>
+        <item>2Q</item>
+        <item>3Q</item>
+        <item>4Q</item>
+    </string-array>
+</resources>

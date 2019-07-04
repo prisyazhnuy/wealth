@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.prisyazhnuy.wealth"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Support
+    implementation rootProject.ext.supportDependencies.lifecycleExtension
+    implementation rootProject.ext.supportDependencies.constraintlayout
+    implementation rootProject.ext.supportDependencies.recyclerView
+    implementation rootProject.ext.supportDependencies.appCompat
+    implementation rootProject.ext.supportDependencies.multiDex
+    implementation rootProject.ext.supportDependencies.kotlin
+    implementation rootProject.ext.supportDependencies.design
+
+    // RxJava
+    implementation rootProject.ext.rxDependencies.rxJava2
+    implementation rootProject.ext.rxDependencies.rxKotlin
+    implementation rootProject.ext.rxDependencies.rxAndroid
+
+    // Jackson
+    implementation rootProject.ext.jacksonDependencies.interceptor
+    implementation rootProject.ext.jacksonDependencies.annotations
+    implementation rootProject.ext.jacksonDependencies.databind
+    implementation rootProject.ext.jacksonDependencies.core
+    implementation rootProject.ext.jacksonDependencies.joda
+
+    //MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+}
